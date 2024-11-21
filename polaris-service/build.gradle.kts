@@ -122,6 +122,7 @@ dependencies {
 
   testRuntimeOnly(project(":polaris-eclipselink"))
 }
+
 dependencies { implementation(project(":polaris-eclipselink")) }
 
 openApiGenerate {

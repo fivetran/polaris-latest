@@ -38,7 +38,7 @@ stringData:
         <class>org.apache.polaris.core.persistence.models.ModelSequenceId</class>
         <shared-cache-mode>NONE</shared-cache-mode>
         <properties>
-          <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/arun_latest"/>
+          <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/{realm}"/>
           <property name="jakarta.persistence.jdbc.user" value="arun.suri"/>
           <property name="jakarta.persistence.jdbc.password" value=""/>
           <property name="jakarta.persistence.schema-generation.database.action" value="create"/>

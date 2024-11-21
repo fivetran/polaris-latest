@@ -80,7 +80,7 @@ realmContextResolver:
   type: default
 
 defaultRealms:
-  - default-realm
+  - arun-realm
 
 metaStoreManager:
 #  type: in-memory
