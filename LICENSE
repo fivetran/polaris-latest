@@ -235,6 +235,7 @@ com.google.api.grpc:proto-google-iam-v1
 com.google.api:api-common
 com.google.api:gax
 com.google.api:gax-grpc
+org.postgresql:postgresql
 com.google.api:gax-httpjson
 com.google.api.grpc:proto-google-cloud-monitoring-v3
 com.google.apis:google-api-services-storage
