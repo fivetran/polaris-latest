@@ -57,6 +57,7 @@ dependencies {
   implementation("io.opentelemetry:opentelemetry-api")
   implementation("io.opentelemetry:opentelemetry-sdk-trace")
   implementation("io.opentelemetry:opentelemetry-exporter-logging")
+  implementation("org.postgresql:postgresql:42.6.0")
   implementation(libs.opentelemetry.semconv)
 
   implementation(libs.caffeine)
@@ -121,10 +122,7 @@ dependencies {
 
   testRuntimeOnly(project(":polaris-eclipselink"))
 }
-
-if (project.properties.get("eclipseLink") == "true") {
-  dependencies { implementation(project(":polaris-eclipselink")) }
-}
+dependencies { implementation(project(":polaris-eclipselink")) }
 
 openApiGenerate {
   inputSpec = "$rootDir/spec/rest-catalog-open-api.yaml"

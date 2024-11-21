@@ -252,6 +252,7 @@ com.google.cloud.opentelemetry:shared-resourcemapping
 com.google.cloud:google-cloud-monitorin
 com.google.code.findbugs:jsr305
 com.google.code.gson:gson
+org.postgresql:postgresql
 com.google.errorprone:error_prone_annotations
 com.google.guava:failureaccess
 com.google.guava:guava
