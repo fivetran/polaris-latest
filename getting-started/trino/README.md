@@ -47,6 +47,6 @@ SELECT * FROM iceberg.tpch.test_polaris;
 ```
 
 ## Note
-The Polaris catalog setup script uses the credential `principal:root;realm:default-realm`. This credential is used so users do not need to fetch credentials from Apache Polaris' console output.
+The Polaris catalog setup script uses the credential `principal:root;realm:default_realm`. This credential is used so users do not need to fetch credentials from Apache Polaris' console output.
 
 An example catalog is created in Apache Polaris using the `curl` command. See `create-polaris-catalog.sh` for details.

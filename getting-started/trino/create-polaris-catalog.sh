@@ -17,7 +17,7 @@
 # under the License.
 #
 
-PRINCIPAL_TOKEN="principal:root;realm:default-realm"
+PRINCIPAL_TOKEN="principal:root;realm:default_realm"
 
 # Use local filesystem by default
 curl -i -X POST -H "Authorization: Bearer $PRINCIPAL_TOKEN" -H 'Accept: application/json' -H 'Content-Type: application/json' \

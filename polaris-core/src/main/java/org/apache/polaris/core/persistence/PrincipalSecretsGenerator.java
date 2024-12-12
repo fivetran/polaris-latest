@@ -38,8 +38,8 @@ import org.apache.polaris.core.entity.PolarisPrincipalSecrets;
  *   <li>{@code POLARIS_BOOTSTRAP_<REALM-NAME>_<PRINCIPAL-NAME>_CLIENT_SECRET}
  * </ul>
  *
- * For example: {@code POLARIS_BOOTSTRAP_DEFAULT-REALM_ROOT_CLIENT_ID} and {@code
- * POLARIS_BOOTSTRAP_DEFAULT-REALM_ROOT_CLIENT_SECRET}.
+ * For example: {@code POLARIS_BOOTSTRAP_default_realm_ROOT_CLIENT_ID} and {@code
+ * POLARIS_BOOTSTRAP_default_realm_ROOT_CLIENT_SECRET}.
  */
 @FunctionalInterface
 public interface PrincipalSecretsGenerator {

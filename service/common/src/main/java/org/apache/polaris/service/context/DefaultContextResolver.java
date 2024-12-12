@@ -53,7 +53,7 @@ public class DefaultContextResolver implements RealmContextResolver, CallContext
 
   @Inject private MetaStoreManagerFactory metaStoreManagerFactory;
   @Inject private PolarisConfigurationStore configurationStore;
-  private String defaultRealm = "default-realm";
+  private String defaultRealm = "default_realm";
 
   @Override
   public RealmContext resolveRealmContext(

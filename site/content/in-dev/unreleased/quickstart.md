@@ -129,7 +129,7 @@ For this tutorial, we'll launch an instance of Polaris that stores entities only
 When Polaris is launched using in-memory mode the root principal credentials can be found in stdout on initial startup. For example:
 
 ```
-realm: default-realm root principal credentials: <client-id>:<client-secret>
+realm: default_realm root principal credentials: <client-id>:<client-secret>
 ```
 
 Be sure to note of these credentials as we'll be using them below. You can also set these credentials as environment variables for use with the Polaris CLI:

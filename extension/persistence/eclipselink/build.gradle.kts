@@ -35,6 +35,7 @@ dependencies {
   implementation(libs.jakarta.inject.api)
   implementation(libs.smallrye.common.annotation)
   implementation("io.dropwizard:dropwizard-jackson")
+  implementation("org.postgresql:postgresql:42.6.0") // or the latest version
   val eclipseLinkDeps: String? = project.findProperty("eclipseLinkDeps") as String?
   eclipseLinkDeps?.let {
     val dependenciesList = it.split(",")

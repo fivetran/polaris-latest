@@ -26,6 +26,7 @@ plugins {
 
 dependencies {
   implementation(project(":polaris-core"))
+  implementation(project(":polaris-eclipselink"))
 
   implementation(platform(libs.iceberg.bom))
   implementation("org.apache.iceberg:iceberg-api")
@@ -57,6 +58,7 @@ dependencies {
   implementation(platform(libs.jackson.bom))
   implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
   implementation("com.fasterxml.jackson.core:jackson-annotations")
+  implementation("org.postgresql:postgresql:42.6.0") // or the latest version
 
   implementation(libs.caffeine)
   implementation(libs.guava)

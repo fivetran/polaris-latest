@@ -110,7 +110,7 @@ tests:
                 - '*'
                 preflight-max-age: 600
               defaultRealms:
-              - default-realm
+              - default_realm
               featureConfiguration:
                 ENFORCE_PRINCIPAL_CREDENTIAL_ROTATION_REQUIRED_CHECKING: false
                 SUPPORTED_CATALOG_STORAGE_TYPES:
@@ -175,7 +175,7 @@ tests:
         realmContextResolver:
           type: default
         defaultRealms:
-        - default-realm
+        - default_realm
         metaStoreManager:
           type: eclipse-link
           persistence-unit: polaris
@@ -245,7 +245,7 @@ tests:
                 - '*'
                 preflight-max-age: 600
               defaultRealms:
-              - default-realm
+              - default_realm
               featureConfiguration:
                 ENFORCE_PRINCIPAL_CREDENTIAL_ROTATION_REQUIRED_CHECKING: false
                 SUPPORTED_CATALOG_STORAGE_TYPES:

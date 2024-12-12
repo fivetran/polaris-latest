@@ -78,7 +78,7 @@ public class PolarisApplicationConfig extends Configuration {
   private static final int OVERRIDE_BINDING_RANK = 10;
 
   private MetaStoreManagerFactory metaStoreManagerFactory;
-  private String defaultRealm = "default-realm";
+  private String defaultRealm = "default_realm";
   private RealmContextResolver realmContextResolver;
   private CallContextResolver callContextResolver;
   private Authenticator<String, AuthenticatedPolarisPrincipal> polarisAuthenticator;

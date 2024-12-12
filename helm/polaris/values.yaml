@@ -305,7 +305,7 @@ polarisServerConfig:
     type: default
 
   defaultRealms:
-    - default-realm
+    - default_realm
 
   metaStoreManager:
     type: in-memory

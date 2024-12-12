@@ -38,7 +38,7 @@ def get_salt(length=8) -> str:
 
 
 def root_cli(*args):
-    return cli('principal:root;realm:default-realm')(*args)
+    return cli('principal:root;realm:default_realm')(*args)
 
 
 def cli(access_token):
