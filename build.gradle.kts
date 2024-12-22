@@ -21,11 +21,16 @@ import java.net.URI
 import org.nosphere.apache.rat.RatTask
 
 buildscript {
-  repositories { maven { url = java.net.URI("https://plugins.gradle.org/m2/") } }
+  repositories {
+    maven {
+      mavenCentral()
+      url = java.net.URI("https://plugins.gradle.org/m2/")
+    } }
   dependencies {
     classpath("com.diffplug.spotless:spotless-plugin-gradle:${libs.plugins.spotless.get().version}")
   }
 }
+
 
 plugins {
   id("idea")

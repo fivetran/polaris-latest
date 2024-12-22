@@ -32,6 +32,7 @@ dependencies {
   implementation(project(":polaris-jpa-model"))
   implementation(libs.eclipselink)
   implementation(platform(libs.dropwizard.bom))
+  implementation("org.postgresql:postgresql:42.6.0")
   implementation("io.dropwizard:dropwizard-jackson")
   val eclipseLinkDeps: String? = project.findProperty("eclipseLinkDeps") as String?
   eclipseLinkDeps?.let {

@@ -82,6 +82,7 @@ class PolarisSequenceUtil {
           long queryResult =
               (long) session.createNativeQuery("SELECT NEXTVAL('POLARIS_SEQ')").getSingleResult();
           result = Optional.of(queryResult);
+          LOGGER.info("query result "+queryResult);
         } else {
           LOGGER.info("POLARIS_SEQ does not exist, skipping NEXTVAL");
         }
@@ -89,13 +90,24 @@ class PolarisSequenceUtil {
             r -> {
               ModelSequenceId modelSequenceId = new ModelSequenceId();
               modelSequenceId.setId(r);
+              EntityTransaction transaction = session.getTransaction();
 
               // Persist the new ID:
-              session.persist(modelSequenceId);
-              session.flush();
+              try {
+                transaction.begin(); // Start the transaction
+                session.persist(modelSequenceId); // Persist the entity
+                session.flush(); // Synchronize changes
+                removeSequence(session); // Clean up sequence
+                transaction.commit(); // Commit the transaction
+              } catch (Exception e) {
+                if (transaction.isActive()) {
+                  transaction.rollback(); // Rollback if any error occurs
+                }
+                throw e; // Re-throw the exception
+              }
 
               // Clean the sequence:
-              removeSequence(session);
+//              removeSequence(session);
             });
       }
       initialized.set(true);

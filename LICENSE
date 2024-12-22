@@ -309,6 +309,7 @@ io.dropwizard:dropwizard-validation
 io.grpc:grpc-alts
 io.grpc:grpc-api
 io.grpc:grpc-auth
+org.postgresql:postgresql
 io.grpc:grpc-context
 io.grpc:grpc-core
 io.grpc:grpc-googleapis
