@@ -35,8 +35,8 @@
     <shared-cache-mode>NONE</shared-cache-mode>
     <properties>
       <property name="jakarta.persistence.jdbc.url"
-        value="jdbc:postgresql://localhost:5432/polaris"/>
-      <property name="jakarta.persistence.jdbc.user" value="arun.suri"/>
+        value="jdbc:postgresql://35.192.95.221:5432/polaris"/>
+      <property name="jakarta.persistence.jdbc.user" value="polaris_staging"/>
       <property name="jakarta.persistence.jdbc.password" value="36#aU27-5zSNA7_N"/>
       <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
       <property name="eclipselink.logging.level.sql" value="FINE"/>
